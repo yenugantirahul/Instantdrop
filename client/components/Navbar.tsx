@@ -18,6 +18,15 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <nav className="hidden items-center gap-8 md:flex">
+          {user?.id && (
+            <Link
+              href="/dashboard"
+              className="text-sm text-zinc-600 transition hover:text-zinc-900"
+            >
+              Dashboard
+            </Link>
+          )}
+
           <Link
             href="#features"
             className="text-sm text-zinc-600 transition hover:text-zinc-900"
