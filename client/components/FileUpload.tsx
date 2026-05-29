@@ -16,9 +16,9 @@ export default function FileUpload() {
     <>
       <Toaster position="top-right" />
 
-      <UploadButton<OurFileRouter>
+      <UploadButton<OurFileRouter, "fileUploader">
         endpoint="fileUploader"
-        skipPolling={false}
+        
         appearance={{
           button:
             "bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all",
